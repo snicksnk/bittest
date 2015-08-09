@@ -1,7 +1,7 @@
 <div ng-repeat="item in data">
     <div class="well">
         <div>{{item.title }}</div> <div ng-bind-html="item.content"></div>
-        <a ng-click="open(item.id)">Detail</a>
+        <a ui-sref="dashboard.news.showOne({id:item.id})">Detail2</a>
     </div>
     <div id ="news_detail">
     </div>

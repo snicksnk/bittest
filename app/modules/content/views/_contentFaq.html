@@ -1,0 +1,8 @@
+<div id="contentMain" class="jumbotron">
+    <p>Faq</p>
+    <accordion  close-others="true">
+        <accordion-group heading="{{ question.header }}" is-open="question.isOpen" aria-controls="collapseOne" ng-repeat="question in faq">
+        	{{ question.content }} 
+        </accordion-group>
+    </accordion>
+</div>
