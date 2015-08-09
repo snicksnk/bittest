@@ -1,0 +1,8 @@
+<div ng-repeat="item in data">
+    <div class="well">
+        <div>{{item.title }}</div> <div ng-bind-html="item.content"></div>
+        <a ng-click="open(item.id)">Detail</a>
+    </div>
+    <div id ="news_detail">
+    </div>
+</div>
